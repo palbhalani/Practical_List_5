@@ -1,0 +1,36 @@
+// Write a C++ program to demonstrate use of Multiple Inheritance.
+
+#include<iostream>
+using namespace std;
+
+class vehicle{
+	
+	public:
+			vehicle()
+			{
+				   cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+				cout<<"This Is A Vehicle"<<endl;
+			}
+};
+class fourwheeler{
+	
+	public:
+			fourwheeler()
+			{
+				cout<<"Fourwheeler Is A Vehicle"<<endl;
+			}
+};
+class car : public vehicle , public fourwheeler{
+	
+	public:
+			car()
+			{
+				cout<<"Car Is A Vehicle"<<endl;
+			}
+};
+int main()
+{
+	car obj;
+	return 0;
+}
